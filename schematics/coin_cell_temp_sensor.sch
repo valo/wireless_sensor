@@ -1413,7 +1413,11 @@ Standard A4 size frame in Landscape</description>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="TMP102" library="pinhead" deviceset="PINHD-1X6" device=""/>
-<part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device=""/>
+<part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device="">
+<attribute name="CNAME" value="Wireless Low Power Node"/>
+<attribute name="CREVISION" value="1.0"/>
+<attribute name="DESIGNER" value="Valentin Mihov"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -1422,7 +1426,7 @@ Standard A4 size frame in Landscape</description>
 <instances>
 <instance part="ATMEGA328" gate="G$1" x="73.66" y="63.5"/>
 <instance part="BAT1" gate="G$1" x="2.54" y="106.68"/>
-<instance part="NRF24" gate="G$1" x="157.48" y="35.56"/>
+<instance part="NRF24" gate="G$1" x="160.02" y="35.56"/>
 <instance part="GND1" gate="1" x="48.26" y="7.62"/>
 <instance part="GND2" gate="1" x="22.86" y="96.52"/>
 <instance part="GND4" gate="1" x="129.54" y="71.12" rot="R180"/>
@@ -1431,8 +1435,12 @@ Standard A4 size frame in Landscape</description>
 <instance part="SUPPLY3" gate="G$1" x="116.84" y="68.58"/>
 <instance part="SUPPLY4" gate="G$1" x="25.4" y="48.26"/>
 <instance part="GND5" gate="1" x="25.4" y="35.56"/>
-<instance part="TMP102" gate="A" x="2.54" y="35.56" rot="MR0"/>
-<instance part="FRAME1" gate="G$1" x="-50.8" y="-40.64"/>
+<instance part="TMP102" gate="A" x="-2.54" y="35.56" rot="MR0"/>
+<instance part="FRAME1" gate="G$1" x="-50.8" y="-40.64">
+<attribute name="CNAME" x="-50.8" y="-40.64" size="1.778" layer="96" display="off"/>
+<attribute name="DESIGNER" x="-50.8" y="-40.64" size="1.778" layer="96" display="off"/>
+<attribute name="CREVISION" x="-50.8" y="-40.64" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1441,7 +1449,7 @@ Standard A4 size frame in Landscape</description>
 <segment>
 <pinref part="NRF24" gate="G$1" pin="GND"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="134.62" y1="45.72" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="45.72" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="45.72" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -1462,7 +1470,7 @@ Standard A4 size frame in Landscape</description>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="5.08" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="0" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="40.64" x2="25.4" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="TMP102" gate="A" pin="2"/>
 </segment>
@@ -1478,9 +1486,8 @@ Standard A4 size frame in Landscape</description>
 <pinref part="ATMEGA328" gate="G$1" pin="AVCC"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
 <wire x1="50.8" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="83.82" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="83.82" x2="38.1" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="ATMEGA328" gate="G$1" pin="VCC"/>
-<wire x1="38.1" y1="93.98" x2="38.1" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="81.28" x2="38.1" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="81.28" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
 <junction x="38.1" y="83.82"/>
@@ -1488,17 +1495,17 @@ Standard A4 size frame in Landscape</description>
 <segment>
 <pinref part="NRF24" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
-<wire x1="134.62" y1="43.18" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="43.18" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="43.18" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
-<wire x1="5.08" y1="43.18" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="0" y1="43.18" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="43.18" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="TMP102" gate="A" pin="1"/>
 </segment>
 <segment>
-<wire x1="5.08" y1="30.48" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="0" y1="30.48" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
 <label x="5.08" y="30.48" size="1.778" layer="95"/>
 <pinref part="TMP102" gate="A" pin="6"/>
 </segment>
@@ -1506,7 +1513,7 @@ Standard A4 size frame in Landscape</description>
 <net name="CE" class="1">
 <segment>
 <pinref part="NRF24" gate="G$1" pin="CE"/>
-<wire x1="134.62" y1="40.64" x2="129.54" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="40.64" x2="129.54" y2="40.64" width="0.1524" layer="91"/>
 <label x="129.54" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -1523,7 +1530,7 @@ Standard A4 size frame in Landscape</description>
 </segment>
 <segment>
 <pinref part="NRF24" gate="G$1" pin="CSN"/>
-<wire x1="134.62" y1="38.1" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="38.1" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
 <label x="129.54" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -1535,7 +1542,7 @@ Standard A4 size frame in Landscape</description>
 </segment>
 <segment>
 <pinref part="NRF24" gate="G$1" pin="SCK"/>
-<wire x1="134.62" y1="35.56" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="35.56" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
 <label x="129.54" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -1547,7 +1554,7 @@ Standard A4 size frame in Landscape</description>
 </segment>
 <segment>
 <pinref part="NRF24" gate="G$1" pin="MOSI"/>
-<wire x1="134.62" y1="33.02" x2="129.54" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="33.02" x2="129.54" y2="33.02" width="0.1524" layer="91"/>
 <label x="129.54" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -1559,14 +1566,14 @@ Standard A4 size frame in Landscape</description>
 </segment>
 <segment>
 <pinref part="NRF24" gate="G$1" pin="MISO"/>
-<wire x1="134.62" y1="30.48" x2="129.54" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="30.48" x2="129.54" y2="30.48" width="0.1524" layer="91"/>
 <label x="129.54" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IRQ" class="1">
 <segment>
 <pinref part="NRF24" gate="G$1" pin="IRQ"/>
-<wire x1="134.62" y1="27.94" x2="129.54" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="27.94" x2="129.54" y2="27.94" width="0.1524" layer="91"/>
 <label x="129.54" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -1577,24 +1584,14 @@ Standard A4 size frame in Landscape</description>
 </net>
 <net name="SDA" class="1">
 <segment>
-<pinref part="ATMEGA328" gate="G$1" pin="PC4(ADC4/SDA)"/>
-<wire x1="99.06" y1="78.74" x2="101.6" y2="78.74" width="0.1524" layer="91"/>
-<label x="99.06" y="78.74" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="5.08" y1="38.1" x2="10.16" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="0" y1="38.1" x2="10.16" y2="38.1" width="0.1524" layer="91"/>
 <label x="5.08" y="38.1" size="1.778" layer="95"/>
 <pinref part="TMP102" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="SCL" class="1">
 <segment>
-<pinref part="ATMEGA328" gate="G$1" pin="PC5(ADC5/SCL)"/>
-<wire x1="99.06" y1="76.2" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
-<label x="99.06" y="76.2" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="5.08" y1="35.56" x2="10.16" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="0" y1="35.56" x2="10.16" y2="35.56" width="0.1524" layer="91"/>
 <label x="5.08" y="35.56" size="1.778" layer="95"/>
 <pinref part="TMP102" gate="A" pin="4"/>
 </segment>
@@ -1602,9 +1599,6 @@ Standard A4 size frame in Landscape</description>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="113,1,4.08342,38.2312,TMP102,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>
